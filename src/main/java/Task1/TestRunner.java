@@ -7,6 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -21,13 +24,22 @@ public class TestRunner {
 		chooseNewArrivals();
 		chooseProduct();
 		addToBag();
-		//Assert.assertTrue(isProductInBag(), "Product wasn't added in the bag!");
+		Assert.assertTrue(isProductInBag(), "Product wasn't added in the bag!");
 
 
 	}
 
 	private boolean isProductInBag() {
-		return false;
+		WebElement bagView = driver.findElement(By.xpath("//*[contains(@class,'side-cart__parent')]"));
+		WebElement bagHeaderButton = driver.findElement(By.xpath("//*[contains(@class,'link cart-button')]"));
+
+		boolean waitingBagDissapearence  = new WebDriverWait(driver, 5).until(ExpectedConditions.invisibilityOf(bagView));
+		if (waitingBagDissapearence) {
+			bagHeaderButton.click();
+		}
+
+		WebElement productInCart = driver.findElement(By.xpath("//*[contains(@class,'side-cart__container')]"));
+		return productInCart.isDisplayed();
 	}
 
 	private void addToBag() {
