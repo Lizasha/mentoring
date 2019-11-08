@@ -8,17 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class TestRunner {
 	private WebDriver driver = new ChromeDriver();
-
-	@BeforeClass
-	private void setProperty() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\elizaveta_shabalina\\Desktop\\autotesting_ment\\chromedriver.exe");
-
-	}
 
 	@Test
 	public void checkAddingToBag() {
