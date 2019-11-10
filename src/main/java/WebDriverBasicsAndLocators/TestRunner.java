@@ -1,4 +1,4 @@
-package Task1;
+package WebDriverBasicsAndLocators;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
