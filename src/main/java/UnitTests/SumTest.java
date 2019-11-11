@@ -1,17 +1,14 @@
 package UnitTests;
 
-import com.epam.tat.module4.Calculator;
-import org.testng.annotations.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
 
-public class SumTest {
-	private Calculator calculator;
+public class SumTest extends BaseTest {
 
-	@BeforeClass
-	public void setUp() {
-		calculator = new Calculator();
-	}
-
-	public void OnePlusTwoTest() {
-
+	@Test
+	public void AddTwoValues() {
+		long result = calculator.sum(565,90000000);
+		boolean actual = (result == 90000565);
+		Assert.assertTrue("Result isn't correct!", actual);
 	}
 }
