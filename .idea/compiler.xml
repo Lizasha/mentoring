@@ -9,8 +9,5 @@
         <module name="a2_automation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="a2_automation" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
