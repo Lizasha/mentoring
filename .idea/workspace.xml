@@ -386,8 +386,8 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.SubstractionTest.devisionByZero" />
-      <item itemvalue="TestNG.TestRunner.checkAddingToBag" />
       <item itemvalue="JUnit.SumTest.AddTwoValues" />
+      <item itemvalue="TestNG.TestRunner.checkAddingToBag" />
     </list>
     <recent_temporary>
       <list>
