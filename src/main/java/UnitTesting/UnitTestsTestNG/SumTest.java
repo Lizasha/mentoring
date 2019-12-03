@@ -1,25 +1,26 @@
-package UnitTests;
+package UnitTesting.UnitTestsTestNG;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class SumTest extends BaseTest {
 
-	@Test() //data provider doesn't work, ask mentor
+	@Test(dataProvider="dataSumTwoValues")
 	public void AddTwoValues(long firstValue, long secondValue, long expectedValue) {
 		long result = calculator.sum(firstValue,secondValue);
 		boolean actual = (result == expectedValue);
-		Assert.assertTrue("Result isn't correct!", actual);
+		Assert.assertTrue(actual, "Result isn't correct!");
 	}
 
-	@DataProvider(name = "valuesForSum")
+	@DataProvider(name="dataSumTwoValues")
 	public Object[][] valuesForSum() {
 		return new Object[][] {
 				{10,23,33},
 				{10,-1,9},
 				{0,0,0},
-				{-1,10,9}
+				{-1,10,9},
+				{100000,1000000,1100000}
 		};
 	}
 }

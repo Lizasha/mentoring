@@ -1,13 +1,13 @@
-package UnitTests;
+package UnitTesting.UnitTestsTestNG;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import com.epam.tat.module4.Calculator;
 
 public class BaseTest {
 
-	static Calculator calculator = new Calculator();
+	static Calculator calculator;
 
 	@BeforeClass
 	public static void setUp() {

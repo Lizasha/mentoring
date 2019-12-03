@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3230bb01-ab21-40b1-ae9e-3122587ffe19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/BaseTestJunit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SumOfNegativeNumbersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTests/SumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UnitTests/SumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UnitTests/SqrtTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UnitTests/SqrtTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTests/SqrtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SqrtTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTests/SubstractionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SubstractionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTests/SumOfNegativeNumbersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTests/SumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UnitTests/SumOfNegativeNumbersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UnitTests/SumOfNegativeNumbersTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UnitTests/SumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UnitTests/SumTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="431">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -35,77 +41,99 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="154">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SumTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SumOfNegativeNumbersTest.java">
+        <entry file="jar://$PROJECT_DIR$/../calculator-1.0.jar!/com/epam/tat/module4/Calculator.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="246">
+              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SqrtTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SubstractionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WebDriverBasicsAndLocators/TestRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/BaseTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/BaseTestJunit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SumTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SumOfNegativeNumbersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SqrtTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SubstractionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +146,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -130,16 +158,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Task1/TestRunner.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/UnitTests/SumOfNegativeNumbers.java" />
         <option value="$PROJECT_DIR$/src/main/java/WebDriverBasicsAndLocators/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/UnitTests/SubstractionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/UnitTests/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/UnitTests/SqrtTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UnitTests/SumOfNegativeNumbersTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/UnitTests/SumOfNegativeNumbersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/UnitTests/SumTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/BaseTestJunit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/Test.java" />
       </list>
     </option>
   </component>
@@ -216,7 +247,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="UnitTests" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="a2_automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a2 mentoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTestsJUnit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="a2_automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a2 mentoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTestsTestNG" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="a2_automation" type="b2602c69:ProjectViewProjectNode" />
@@ -233,8 +282,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SumTest.AddTwoValues">
+  <component name="RunManager" selected="TestNG.C:/Users/elizaveta_shabalina/Desktop/autotesting_ment/a2 mentoring/src/main/resources/testng.xml">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -274,12 +323,12 @@
       <module name="a2_automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UnitTests.*" />
+          <option name="PATTERN" value="UnitTesting.UnitTestsTestNG.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="UnitTests" />
-      <option name="MAIN_CLASS_NAME" value="UnitTests.SubstractionTest" />
+      <option name="PACKAGE_NAME" value="UnitTesting.UnitTestsTestNG" />
+      <option name="MAIN_CLASS_NAME" value="UnitTesting.UnitTestsTestNG.SubstractionTest" />
       <option name="METHOD_NAME" value="devisionByZero" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
@@ -292,12 +341,12 @@
       <module name="a2_automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UnitTests.*" />
+          <option name="PATTERN" value="UnitTesting.UnitTestsTestNG.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="UnitTests" />
-      <option name="MAIN_CLASS_NAME" value="UnitTests.SumTest" />
+      <option name="PACKAGE_NAME" value="UnitTesting.UnitTestsTestNG" />
+      <option name="MAIN_CLASS_NAME" value="UnitTesting.UnitTestsTestNG.SumTest" />
       <option name="METHOD_NAME" value="AddTwoValues" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -312,18 +361,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner.checkAddingToBag" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/elizaveta_shabalina/Desktop/autotesting_ment/a2 mentoring/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="a2_automation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=&quot;C:\\chromedriver\\chromedriver.exe&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumOfNegativeNumbersTest.SumOfNegativeTwoAndNegativeTwo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="a2_automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WebDriverBasicsAndLocators.*" />
+          <option name="PATTERN" value="UnitTesting.UnitTestsTestNG.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="Task1" />
-      <option name="MAIN_CLASS_NAME" value="WebDriverBasicsAndLocators.TestRunner" />
-      <option name="METHOD_NAME" value="checkAddingToBag" />
+      <option name="PACKAGE_NAME" value="UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="UnitTesting.UnitTestsTestNG.SumOfNegativeNumbersTest" />
+      <option name="METHOD_NAME" value="SumOfNegativeTwoAndNegativeTwo" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=&quot;C:\\chromedriver\\chromedriver.exe&quot;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumTest.AddTwoValues" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="a2_automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTesting.UnitTestsTestNG.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="UnitTesting.UnitTestsTestNG.SumTest" />
+      <option name="METHOD_NAME" value="AddTwoValues" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea -Dwebdriver.chrome.driver=&quot;C:\\chromedriver\\chromedriver.exe&quot;" />
@@ -365,13 +456,17 @@
     <list>
       <item itemvalue="JUnit.SubstractionTest.devisionByZero" />
       <item itemvalue="JUnit.SumTest.AddTwoValues" />
-      <item itemvalue="TestNG.TestRunner.checkAddingToBag" />
+      <item itemvalue="TestNG.SumTest.AddTwoValues" />
+      <item itemvalue="TestNG.SumOfNegativeNumbersTest.SumOfNegativeTwoAndNegativeTwo" />
+      <item itemvalue="TestNG.C:/Users/elizaveta_shabalina/Desktop/autotesting_ment/a2 mentoring/src/main/resources/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/elizaveta_shabalina/Desktop/autotesting_ment/a2 mentoring/src/main/resources/testng.xml" />
+        <item itemvalue="TestNG.SumTest.AddTwoValues" />
+        <item itemvalue="TestNG.SumOfNegativeNumbersTest.SumOfNegativeTwoAndNegativeTwo" />
         <item itemvalue="JUnit.SumTest.AddTwoValues" />
         <item itemvalue="JUnit.SubstractionTest.devisionByZero" />
-        <item itemvalue="TestNG.TestRunner.checkAddingToBag" />
       </list>
     </recent_temporary>
   </component>
@@ -389,35 +484,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner_checkAddingToBag - 2019.11.08 at 17h 58m 56s.xml">
-      <configuration name="TestRunner.checkAddingToBag" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner_checkAddingToBag - 2019.11.10 at 16h 04m 21s.xml">
-      <configuration name="TestRunner.checkAddingToBag" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner_checkAddingToBag - 2019.11.10 at 16h 05m 32s.xml">
-      <configuration name="TestRunner.checkAddingToBag" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner_checkAddingToBag_(1) - 2019.11.08 at 17h 57m 17s.xml">
-      <configuration name="TestRunner.checkAddingToBag (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SubstractionTest_devisionByZero - 2019.11.11 at 19h 56m 55s.xml">
-      <configuration name="SubstractionTest.devisionByZero" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SubstractionTest_devisionByZero - 2019.11.11 at 19h 59m 03s.xml">
-      <configuration name="SubstractionTest.devisionByZero" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SubstractionTest_devisionByZero - 2019.11.11 at 19h 59m 09s.xml">
-      <configuration name="SubstractionTest.devisionByZero" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SumTest_AddTwoValues - 2019.11.11 at 19h 59m 23s.xml">
-      <configuration name="SumTest.AddTwoValues" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SumTest_AddTwoValues - 2019.11.11 at 19h 59m 34s.xml">
       <configuration name="SumTest.AddTwoValues" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SumTest_AddTwoValues - 2019.11.12 at 19h 56m 24s.xml">
       <configuration name="SumTest.AddTwoValues" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SumTest_AddTwoValues - 2019.11.12 at 20h 47m 44s.xml">
+      <configuration name="SumTest.AddTwoValues" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SumTest_AddTwoValues - 2019.12.03 at 17h 59m 57s.xml">
+      <configuration name="SumTest.AddTwoValues" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SumOfNegativeNumbersTest_SumOfNegativeTwoAndNegativeTwo - 2019.12.03 at 18h 06m 02s.xml">
+      <configuration name="SumOfNegativeNumbersTest.SumOfNegativeTwoAndNegativeTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SumOfNegativeNumbersTest_SumOfNegativeTwoAndNegativeTwo - 2019.12.03 at 18h 06m 15s.xml">
+      <configuration name="SumOfNegativeNumbersTest.SumOfNegativeTwoAndNegativeTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SumOfNegativeNumbersTest_SumOfNegativeTwoAndNegativeTwo - 2019.12.03 at 18h 06m 25s.xml">
+      <configuration name="SumOfNegativeNumbersTest.SumOfNegativeTwoAndNegativeTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SumTest_AddTwoValues - 2019.12.03 at 18h 28m 45s.xml">
+      <configuration name="SumTest.AddTwoValues" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_elizaveta_shabalina_Desktop_autotesting_ment_a2_mentoring_src_main_resources_testng_xml - 2019.12.03 at 18h 34m 26s.xml">
+      <configuration name="C:/Users/elizaveta_shabalina/Desktop/autotesting_ment/a2 mentoring/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_elizaveta_shabalina_Desktop_autotesting_ment_a2_mentoring_src_main_resources_testng_xml - 2019.12.03 at 18h 34m 47s.xml">
+      <configuration name="C:/Users/elizaveta_shabalina/Desktop/autotesting_ment/a2 mentoring/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -438,20 +533,19 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14765458" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1673774" />
       <window_info id="Structure" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="1" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.2426869" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.2426869" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.122068234" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.2469419" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -460,6 +554,7 @@
       <window_info anchor="right" id="Commander" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="8" visible="true" weight="0.122068234" />
     </layout>
     <layout-to-restore>
       <window_info id="Capture Tool" order="0" />
@@ -494,13 +589,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/UnitTests/SubstractionTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SubstractionTest.java</url>
           <line>9</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/UnitTests/SubstractionTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SubstractionTest.java</url>
           <line>8</line>
           <properties />
           <option name="timeStamp" value="18" />
@@ -540,42 +635,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/TestCases.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Task2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Task1/TestCases.java" />
-    <entry file="jar://$PROJECT_DIR$/../calculator-1.0.jar!/com/epam/tat/module4/Calculator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng.fxml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/annotations/DataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SqrtTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SubstractionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="65">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -589,20 +653,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/BaseTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/Test.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="176">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SubstractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SumOfNegativeNumbersTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SqrtTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        <state relative-caret-position="220">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SumOfNegativeNumbersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -611,32 +692,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="154">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/annotations/DataProvider.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="431">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-3/junit-4.13-beta-3.jar!/org/junit/Test.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/SumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTests/SumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="418">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsTestNG/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/BaseTestJunit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../calculator-1.0.jar!/com/epam/tat/module4/Calculator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UnitTesting/UnitTestsJUnit/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>

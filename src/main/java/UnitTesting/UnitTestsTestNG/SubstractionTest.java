@@ -1,4 +1,4 @@
-package UnitTests;
+package UnitTesting.UnitTestsTestNG;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -2,13 +2,8 @@
 
     <test name="Sum Test">
         <classes>
-            <class name="UnitTests.SumTest"/>
-        </classes>
-    </test>
-
-    <test name="Sum of Negative">
-        <classes>
-            <class name="UnitTests.SumOfNegativeNumbersTest"/>
+            <class name="UnitTesting.UnitTestsTestNG.SumTest"/>
+            <class name="UnitTesting.UnitTestsTestNG.SumOfNegativeNumbersTest"/>
         </classes>
     </test>
 </suite>
