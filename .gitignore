@@ -2,5 +2,5 @@
 *.jar
 *.iml
 *.log
-.idea/workspace.xml
-target
+.idea/
+target/
