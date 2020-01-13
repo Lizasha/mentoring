@@ -1,9 +1,12 @@
-<suite name="test suite">
+<suite name="test suite" parallel="classes" thread-count="3">
 
     <test name="Sum Test">
         <classes>
             <class name="UnitTesting.UnitTestsTestNG.SumTest"/>
             <class name="UnitTesting.UnitTestsTestNG.SumOfNegativeNumbersTest"/>
+            <class name="UnitTesting.UnitTestsTestNG.SubstractionTest"/>
+            <class name="UnitTesting.UnitTestsTestNG.SqrtTest"/>
         </classes>
     </test>
+
 </suite>

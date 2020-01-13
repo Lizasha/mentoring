@@ -1,6 +1,8 @@
 package UnitTesting.UnitTestsTestNG;
-import org.junit.Assert;
-import org.junit.Test;
+
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class SubstractionTest extends BaseTest {
 
@@ -8,7 +10,7 @@ public class SubstractionTest extends BaseTest {
 	public void devisionByZero() {
 		long result = calculator.div(34000,65000);
 		boolean actual = (result == 0);
-		Assert.assertTrue("Result should be zero", actual);
+		Assert.assertTrue(actual, "Result should be zero");
 	}
 
 }

@@ -1,14 +1,15 @@
 package UnitTesting.UnitTestsTestNG;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class SqrtTest extends BaseTest {
 
 	@Test
-	public void SqrtFromTwentyFour() {
+	public void sqrtFromTwentyFour() {
 		double result = calculator.sqrt(64);
 		boolean actual = (result == 8);
-		Assert.assertTrue("Sqrt should be correct!", actual);
+		Assert.assertTrue(actual, "Sqrt should be correct!");
 	}
 }

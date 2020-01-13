@@ -7,10 +7,9 @@ import org.testng.annotations.Test;
 public class SumTest extends BaseTest {
 
 	@Test(dataProvider="dataSumTwoValues")
-	public void AddTwoValues(long firstValue, long secondValue, long expectedValue) {
-		long result = calculator.sum(firstValue,secondValue);
-		boolean actual = (result == expectedValue);
-		Assert.assertTrue(actual, "Result isn't correct!");
+	public void addTwoValues(long firstValue, long secondValue, long expectedValue) {
+		long result = calculator.sum(firstValue, secondValue);
+		Assert.assertEquals(result, expectedValue,"Result isn't correct!");
 	}
 
 	@DataProvider(name="dataSumTwoValues")

@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class SumOfNegativeNumbersTest extends BaseTest {
 
 	@Test(dataProvider = "dataSumOfNegative")
-	public void SumOfNegativeTwoAndNegativeTwo(long firstValue, long secondValue, long expectedValue) {
+	public void sumOfNegativeTwoAndNegativeTwo(long firstValue, long secondValue, long expectedValue) {
 		double result = calculator.sum(firstValue, secondValue);
 		boolean actual = (result == expectedValue);
 		Assert.assertTrue(actual,"Result should be zero!");

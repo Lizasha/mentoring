@@ -5,6 +5,7 @@ import org.junit.BeforeClass;
 
 import com.epam.tat.module4.Calculator;
 
+
 public class BaseTestJunit {
 
 	 static Calculator calculator;
