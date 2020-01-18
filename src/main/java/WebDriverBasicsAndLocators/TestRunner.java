@@ -12,10 +12,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class TestRunner {
-	private WebDriver driver = new ChromeDriver();
+	private WebDriver driver;
+
+	@BeforeClass
+	public void initBrowser() {
+		driver = new ChromeDriver();
+	}
 
 	@Test
 	public void checkAddingToBag() {
