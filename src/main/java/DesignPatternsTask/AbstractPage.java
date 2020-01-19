@@ -26,8 +26,6 @@ public class AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'side-cart__container')]")
 	private WebElement productInCart;
 
-	boolean waitingBagDissapearence  = new WebDriverWait(driver, 5).until(ExpectedConditions.invisibilityOf(bagView));
-
 	public AbstractPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver,this);

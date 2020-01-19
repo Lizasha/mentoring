@@ -15,7 +15,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TestRunner {
-	private WebDriver driver;
+	private static WebDriver driver;
+	private AbstractPage abstractPage = new AbstractPage(driver);
+	private NewArrivalsPage newArrivalsPage = new NewArrivalsPage(driver);
+	private ProductPage productPage = new ProductPage(driver);
 
 	@BeforeClass
 	public void initBrowser() {
@@ -27,10 +30,11 @@ public class TestRunner {
 
 	@Test(description = "Check add item to bag")
 	public void checkAddingToBag() {
-		new AbstractPage(driver).clickOnBurgerMenu();
-		new NewArrivalsPage(driver).clickOnProduct();
-		new ProductPage(driver).clickAddToBagButton();
-		Assert.assertTrue(needToFindOutHowCreateChainsOfMethodsUpper, "Product wasn't added in the bag!");
+		abstractPage.clickOnBurgerMenu();
+		abstractPage.newArrivalsClick();
+		newArrivalsPage.clickOnProduct();
+		productPage.clickAddToBagButton();
+		Assert.assertTrue(abstractPage.isProductInBag(), "Product wasn't added in the bag!");
 
 
 	}
