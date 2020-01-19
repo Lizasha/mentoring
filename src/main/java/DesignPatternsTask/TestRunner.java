@@ -16,9 +16,6 @@ import java.util.concurrent.TimeUnit;
 
 public class TestRunner {
 	private static WebDriver driver;
-	private AbstractPage abstractPage = new AbstractPage(driver);
-	private NewArrivalsPage newArrivalsPage = new NewArrivalsPage(driver);
-	private ProductPage productPage = new ProductPage(driver);
 
 	@BeforeClass
 	public void initBrowser() {
@@ -30,6 +27,11 @@ public class TestRunner {
 
 	@Test(description = "Check add item to bag")
 	public void checkAddingToBag() {
+
+		AbstractPage abstractPage = new AbstractPage(driver);
+		NewArrivalsPage newArrivalsPage = new NewArrivalsPage(driver);
+		ProductPage productPage = new ProductPage(driver);
+
 		abstractPage.clickOnBurgerMenu();
 		abstractPage.newArrivalsClick();
 		newArrivalsPage.clickOnProduct();
