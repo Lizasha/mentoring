@@ -52,7 +52,7 @@ public class TestRunner {
 		homePage.openPage();
 		abstractPage.openLoginForm();
 		loginAndRegistrationPage.inputLogin(invalidLogin).inputPassword(invalidPassword).clickOnSignIn();
-		Assert.assertTrue(myAccountPage.isSuccessfulSignInMessageIsDisplayed(), "Successful message after login was not display");
+		Assert.assertTrue(loginAndRegistrationPage.isErrorMessageIsDisplayed(), "Successful message after login was not display");
 
 	}
 

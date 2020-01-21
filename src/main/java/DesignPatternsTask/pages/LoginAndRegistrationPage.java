@@ -15,6 +15,9 @@ public class LoginAndRegistrationPage extends AbstractPage {
 	@FindBy(css = "//input[@value='Sign In']")
 	private WebElement signInButton;
 
+	@FindBy(xpath = "//*[contains(@class,'errors')]")
+	private WebElement errorLoginMessage;
+
 	public LoginAndRegistrationPage(WebDriver driver) {
 		super(driver);
 	}
@@ -34,5 +37,7 @@ public class LoginAndRegistrationPage extends AbstractPage {
 		return this;
 	}
 
-
+	public boolean isErrorMessageIsDisplayed() {
+		return errorLoginMessage.isDisplayed();
+	}
 }
