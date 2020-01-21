@@ -35,7 +35,7 @@ public class AbstractPage {
 		burgerMenu.click();
 	}
 
-	public void newArrivalsClick() {
+	public void clickOnNewArrivals() {
 		newArrivalsCategory.click();
 	}
 

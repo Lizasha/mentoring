@@ -1,17 +1,12 @@
 package DesignPatternsTask;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TestRunner {
@@ -33,7 +28,7 @@ public class TestRunner {
 		ProductPage productPage = new ProductPage(driver);
 
 		abstractPage.clickOnBurgerMenu();
-		abstractPage.newArrivalsClick();
+		abstractPage.clickOnNewArrivals();
 		newArrivalsPage.clickOnProduct();
 		productPage.clickAddToBagButton();
 		Assert.assertTrue(abstractPage.isProductInBag(), "Product wasn't added in the bag!");
