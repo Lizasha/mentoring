@@ -3,6 +3,7 @@ package DesignPatternsTask;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AbstractPage {
 	protected WebDriver driver;
+
+	// Elements //
 
 	@FindBy(xpath = "//*[contains(@class,'header__hamburger-container')]")
 	private WebElement burgerMenu;
@@ -26,13 +29,26 @@ public class AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'side-cart__container')]")
 	private WebElement productInCart;
 
-	public AbstractPage(WebDriver driver) {
+	@FindBy(xpath = "//*[contains(@class,'header__actions')]//*[contains(@class,'account')]")
+	private WebElement accountIcon;
+
+	@FindBy(xpath = "//descendant::*//*[contains(@aria-label,'My Account')]//li[1]")
+	private WebElement myAccount;
+
+	// Lists //
+
+	@FindBy(xpath = "//*[contains(@aria-label,'My Account')]")
+	private WebElement accountOptionsList;
+
+
+	AbstractPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver,this);
 	}
 
-	public void clickOnBurgerMenu() {
+	public AbstractPage clickOnBurgerMenu() {
 		burgerMenu.click();
+		return this;
 	}
 
 	public void clickOnNewArrivals() {
@@ -40,7 +56,7 @@ public class AbstractPage {
 	}
 
 	public boolean isProductInBag() {
-		boolean waitingBagDissapearence  = new WebDriverWait(driver, 5).until(ExpectedConditions.invisibilityOf(bagView));
+		boolean waitingBagDissapearence = new WebDriverWait(driver, 5).until(ExpectedConditions.invisibilityOf(bagView));
 
 		if (waitingBagDissapearence) {
 			bagHeaderButton.click();
@@ -49,4 +65,10 @@ public class AbstractPage {
 		return productInCart.isDisplayed();
 	}
 
+	public void openLoginForm() {
+		Actions action = new Actions(driver);
+		action.moveToElement(accountIcon).build().perform();
+		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(accountOptionsList));
+		myAccount.click();
+	}
 }

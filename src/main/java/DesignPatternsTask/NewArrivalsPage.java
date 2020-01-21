@@ -11,7 +11,7 @@ public class NewArrivalsPage extends AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'listing')]//div[@aria-labelledby]")
 	private List<WebElement> productContainer;
 
-	public NewArrivalsPage(WebDriver driver) {
+	NewArrivalsPage(WebDriver driver) {
 		super(driver);
 	}
 

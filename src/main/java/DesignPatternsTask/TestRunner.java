@@ -10,35 +10,39 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class TestRunner {
-	private static WebDriver driver;
+	private HomePage homePage = new HomePage(DriverManager.getInstance().getDriver());
+	private AbstractPage abstractPage = new AbstractPage(DriverManager.getInstance().getDriver());
+	private NewArrivalsPage newArrivalsPage = new NewArrivalsPage(DriverManager.getInstance().getDriver());
+	private ProductPage productPage = new ProductPage(DriverManager.getInstance().getDriver());
 
 	@BeforeClass
 	public void initBrowser() {
-		driver = new ChromeDriver();
-		driver.get("https://colourpop.com/");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		DriverManager.getInstance();
 	}
 
 	@Test(description = "Check add item to bag")
 	public void checkAddingToBag() {
 
-		AbstractPage abstractPage = new AbstractPage(driver);
-		NewArrivalsPage newArrivalsPage = new NewArrivalsPage(driver);
-		ProductPage productPage = new ProductPage(driver);
-
-		abstractPage.clickOnBurgerMenu();
-		abstractPage.clickOnNewArrivals();
+		homePage.openPage();
+		abstractPage.clickOnBurgerMenu().clickOnNewArrivals();
 		newArrivalsPage.clickOnProduct();
 		productPage.clickAddToBagButton();
 		Assert.assertTrue(abstractPage.isProductInBag(), "Product wasn't added in the bag!");
+
+	}
+
+	@Test(description = "Check authorization")
+	public void checkLogin() {
+
+		homePage.openPage();
+		abstractPage.openLoginForm();
 
 
 	}
 
 	@AfterTest
 	private void quitBrowser() {
-		driver.quit();
+		DriverManager.getInstance().closeDriver();
 	}
 
 }
