@@ -1,5 +1,6 @@
-package DesignPatternsTask;
+package DesignPatternsTask.pages;
 
+import DesignPatternsTask.pages.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,7 @@ public class NewArrivalsPage extends AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'listing')]//div[@aria-labelledby]")
 	private List<WebElement> productContainer;
 
-	NewArrivalsPage(WebDriver driver) {
+	public NewArrivalsPage(WebDriver driver) {
 		super(driver);
 	}
 

@@ -1,6 +1,5 @@
-package DesignPatternsTask;
+package DesignPatternsTask.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -41,7 +40,7 @@ public class AbstractPage {
 	private WebElement accountOptionsList;
 
 
-	AbstractPage(WebDriver driver) {
+	public AbstractPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver,this);
 	}

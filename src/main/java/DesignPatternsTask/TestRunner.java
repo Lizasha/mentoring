@@ -1,19 +1,24 @@
 package DesignPatternsTask;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import DesignPatternsTask.pages.*;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 public class TestRunner {
 	private HomePage homePage = new HomePage(DriverManager.getInstance().getDriver());
 	private AbstractPage abstractPage = new AbstractPage(DriverManager.getInstance().getDriver());
 	private NewArrivalsPage newArrivalsPage = new NewArrivalsPage(DriverManager.getInstance().getDriver());
 	private ProductPage productPage = new ProductPage(DriverManager.getInstance().getDriver());
+	private LoginAndRegistrationPage loginAndRegistrationPage = new LoginAndRegistrationPage(DriverManager.getInstance().getDriver());
+	private MyAccountPage myAccountPage = new MyAccountPage(DriverManager.getInstance().getDriver());
+
+
+	private String validLogin = "colorpopuser@mailinator.com";
+	private String validPassword = "password1";
+	private String invalidLogin = "incorrectuser@mailinator.com";
+	private String invalidPassword = "incorrect_password";
 
 	@BeforeClass
 	public void initBrowser() {
@@ -31,12 +36,23 @@ public class TestRunner {
 
 	}
 
-	@Test(description = "Check authorization")
-	public void checkLogin() {
+	@Test(description = "Check valid authorization")
+	public void checkSuccessfulLogin() {
 
 		homePage.openPage();
 		abstractPage.openLoginForm();
+		loginAndRegistrationPage.inputLogin(validLogin).inputPassword(validPassword).clickOnSignIn();
+		Assert.assertTrue(myAccountPage.isSuccessfulSignInMessageIsDisplayed(), "Successful message after login was not display");
 
+	}
+
+	@Test(description = "Check invalid authorization")
+	public void checkUnsuccessfulLogin() {
+
+		homePage.openPage();
+		abstractPage.openLoginForm();
+		loginAndRegistrationPage.inputLogin(invalidLogin).inputPassword(invalidPassword).clickOnSignIn();
+		Assert.assertTrue(myAccountPage.isSuccessfulSignInMessageIsDisplayed(), "Successful message after login was not display");
 
 	}
 
