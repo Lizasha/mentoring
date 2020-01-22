@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class MyAccountPage extends AbstractPage {
 
 
-	@FindBy(css = "//*[contains(@class,'act-welcome__hi')]")
+	@FindBy(xpath = "//*[contains(@class,'act-welcome__hi')]")
 	private WebElement successfulSignInMessage;
 
 	public MyAccountPage(WebDriver driver) {

@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginAndRegistrationPage extends AbstractPage {
 
-	@FindBy(css = "//input[@id='login_email']")
+	@FindBy(xpath = "//*[contains(@id,'login_email')]")
 	private WebElement loginField;
 
-	@FindBy(css = "//input[@id='login_password']")
+	@FindBy(xpath = "//*[contains(@id,'login_password')]")
 	private WebElement passwordField;
 
-	@FindBy(css = "//input[@value='Sign In']")
+	@FindBy(xpath = "//*[contains(@value,'Sign In')]")
 	private WebElement signInButton;
 
 	@FindBy(xpath = "//*[contains(@class,'errors')]")
@@ -23,11 +23,13 @@ public class LoginAndRegistrationPage extends AbstractPage {
 	}
 
 	public LoginAndRegistrationPage inputLogin(String login) {
+		loginField.click();
 		loginField.sendKeys(login);
 		return this;
 	}
 
 	public LoginAndRegistrationPage inputPassword(String password) {
+		passwordField.click();
 		passwordField.sendKeys(password);
 		return this;
 	}
