@@ -2,7 +2,11 @@ package ActionsAndSeleniumGrid.DesignPatternsTask.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import javax.swing.Action;
 
 public class LoginAndRegistrationPage extends AbstractPage {
 
@@ -17,9 +21,6 @@ public class LoginAndRegistrationPage extends AbstractPage {
 
 	@FindBy(xpath = "//*[contains(@class,'errors')]")
 	private WebElement errorLoginMessage;
-
-	@FindBy(xpath = "//*[contains(@class,'act-info__info')]")
-	private WebElement personalInfoEmail;
 
 	public LoginAndRegistrationPage(WebDriver driver) {
 		super(driver);
@@ -44,20 +45,5 @@ public class LoginAndRegistrationPage extends AbstractPage {
 
 	public boolean isErrorMessageIsDisplayed() {
 		return errorLoginMessage.isDisplayed();
-	}
-
-	public LoginAndRegistrationPage dragNDropEmailToEmailField() {
-		//implementation
-		return this;
-	}
-
-	public LoginAndRegistrationPage confirmSubscription() {
-		//implementation
-		return this;
-	}
-
-	public boolean isSuccessfulSubscriptionMessageIsDisplayed() {
-		//implementation
-		return false;
 	}
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractPage {
+public abstract class AbstractPage {
 	protected WebDriver driver;
 
 	// Elements //
@@ -17,7 +17,7 @@ public class AbstractPage {
 	private WebElement burgerMenu;
 
 	@FindBy(xpath = "//*[contains(@class,'navigation__container')]//*[contains(@href,'/collections/new')]")
-	WebElement newArrivalsCategory;
+	private WebElement newArrivalsCategory;
 
 	@FindBy(xpath = "//*[contains(@class,'side-cart__parent')]")
 	private WebElement bagView;
