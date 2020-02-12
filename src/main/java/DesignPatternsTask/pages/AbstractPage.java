@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractPage {
+public abstract class AbstractPage {
 	protected WebDriver driver;
 
 	// Elements //
@@ -32,7 +32,7 @@ public class AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'header__actions')]//*[contains(@class,'account')]")
 	private WebElement accountIcon;
 
-	@FindBy(xpath = "//descendant::*//*[contains(@aria-label,'My Account')]//li[1]")
+	@FindBy(xpath = "//*[contains(@class,'header__action--submenu')]//li")
 	private WebElement myAccount;
 
 	@FindBy(xpath = "//input[@id='login_email']")
