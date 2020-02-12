@@ -1,4 +1,4 @@
-package ActionsAndSeleniumGrid.DesignPatternsTask;
+package ActionsAndSeleniumGrid;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

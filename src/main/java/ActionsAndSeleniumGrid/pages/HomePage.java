@@ -1,8 +1,9 @@
-package ActionsAndSeleniumGrid.DesignPatternsTask.pages;
+package ActionsAndSeleniumGrid.pages;
 
-import ActionsAndSeleniumGrid.DesignPatternsTask.DriverManager;
-import ActionsAndSeleniumGrid.DesignPatternsTask.config.Environment;
 import org.openqa.selenium.WebDriver;
+
+import ActionsAndSeleniumGrid.DriverManager;
+import ActionsAndSeleniumGrid.config.Environment;
 
 public class HomePage extends AbstractPage {
 

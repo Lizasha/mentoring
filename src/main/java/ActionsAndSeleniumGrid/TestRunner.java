@@ -1,10 +1,15 @@
-package ActionsAndSeleniumGrid.DesignPatternsTask;
+package ActionsAndSeleniumGrid;
 
-import ActionsAndSeleniumGrid.DesignPatternsTask.pages.*;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import ActionsAndSeleniumGrid.pages.HomePage;
+import ActionsAndSeleniumGrid.pages.LoginAndRegistrationPage;
+import ActionsAndSeleniumGrid.pages.MyAccountPage;
+import ActionsAndSeleniumGrid.pages.NewArrivalsPage;
+import ActionsAndSeleniumGrid.pages.ProductPage;
 
 public class TestRunner {
 	private HomePage homePage = new HomePage(DriverManager.getInstance().getDriver());

@@ -1,4 +1,4 @@
-package DesignPatternsTask.config;
+package ActionsAndSeleniumGrid.config;
 
 public class Environment {
 	private String domain = "https://colourpop.com/";
