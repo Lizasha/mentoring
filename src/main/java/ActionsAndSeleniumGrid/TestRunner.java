@@ -57,6 +57,7 @@ public class TestRunner {
 
 	}
 
+	// Module Actions and SeleniumGrid
 	@Test(description = "check drag and drop: replace email string in subscribe field and press confirm")
 	public void checkSubscribe() {
 

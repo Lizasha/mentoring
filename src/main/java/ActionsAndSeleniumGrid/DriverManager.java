@@ -23,7 +23,7 @@ public class DriverManager {
 	}
 
 	private static void initializationDriver() {
-		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Liza\\learn\\mentoring\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}

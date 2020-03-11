@@ -1,5 +1,6 @@
 package ActionsAndSeleniumGrid.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -37,7 +38,7 @@ public class MyAccountPage extends AbstractPage {
 	public MyAccountPage dragNDropEmailToEmailField() {
 		Actions action = new Actions(driver);
 		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(personalInfoEmail));
-		action.dragAndDrop(personalInfoEmail, inputToSubscribe).build().perform();
+		action.dragAndDrop(personalInfoEmail, inputToSubscribe).sendKeys(Keys.CONTROL + "v").build().perform();
 		return this;
 	}
 
