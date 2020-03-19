@@ -48,6 +48,8 @@ public abstract class AbstractPage {
 		PageFactory.initElements(this.driver,this);
 	}
 
+
+
 	public AbstractPage clickOnBurgerMenu() {
 		burgerMenu.click();
 		return this;

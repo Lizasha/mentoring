@@ -4,9 +4,7 @@ import ActionsAndSeleniumGrid.YandexDiskAutomation.YDStartPage;
 import ActionsAndSeleniumGrid.YandexDiskAutomation.YDLoginPopup;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import ActionsAndSeleniumGrid.pages.HomePage;
 import ActionsAndSeleniumGrid.pages.LoginAndRegistrationPage;
@@ -29,8 +27,10 @@ public class TestRunner {
 	private String invalidLogin = "incorrectuser@mailinator.com";
 	private String invalidPassword = "incorrect_password";
 
+
+	@Parameters({"browserName", "browserVersion"})
 	@BeforeClass
-	public void initBrowser() {
+	public void initBrowser(@Optional String browserName, String browserVersion) {
 		DriverManager.getInstance();
 	}
 
