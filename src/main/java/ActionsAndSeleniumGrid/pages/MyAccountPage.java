@@ -34,21 +34,4 @@ public class MyAccountPage extends AbstractPage {
 		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(successfulSignInMessage));
 		return successfulSignInMessage.isDisplayed();
 	}
-
-	public MyAccountPage dragNDropEmailToEmailField() {
-		Actions action = new Actions(driver);
-		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(personalInfoEmail));
-		action.dragAndDrop(personalInfoEmail, inputToSubscribe).sendKeys(Keys.CONTROL + "v").build().perform();
-		return this;
-	}
-
-	public MyAccountPage confirmSubscription() {
-		subscribeButton.click();
-		return this;
-	}
-
-	public boolean isSuccessfulSubscriptionMessageIsDisplayed() {
-		subscriptionConfirmationImage.isDisplayed();
-		return false;
-	}
 }

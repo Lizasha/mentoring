@@ -1,5 +1,8 @@
 package ActionsAndSeleniumGrid;
 
+import ActionsAndSeleniumGrid.YandexDiskAutomation.YDStartPage;
+import ActionsAndSeleniumGrid.YandexDiskAutomation.YDLoginPopup;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -17,6 +20,8 @@ public class TestRunner {
 	private ProductPage productPage = new ProductPage(DriverManager.getInstance().getDriver());
 	private LoginAndRegistrationPage loginAndRegistrationPage = new LoginAndRegistrationPage(DriverManager.getInstance().getDriver());
 	private MyAccountPage myAccountPage = new MyAccountPage(DriverManager.getInstance().getDriver());
+	private YDStartPage ydStartPage = new YDStartPage(DriverManager.getInstance().getDriver());
+	private YDLoginPopup ydLoginPopup = new YDLoginPopup(DriverManager.getInstance().getDriver());
 
 
 	private String validLogin = "colorpopuser@mailinator.com";
@@ -58,15 +63,15 @@ public class TestRunner {
 	}
 
 	// Module Actions and SeleniumGrid
-	@Test(description = "check drag and drop: replace email string in subscribe field and press confirm")
-	public void checkSubscribe() {
-
-		homePage.openPage().openLoginForm();
-		loginAndRegistrationPage.inputLogin(validLogin).inputPassword(validPassword).clickOnSignIn();
-		myAccountPage.dragNDropEmailToEmailField().confirmSubscription();
-		Assert.assertTrue(myAccountPage.isSuccessfulSubscriptionMessageIsDisplayed(),
-				"Successful Subscription Message should be visible");
+	@Test(description = "take a file and move it in a folder by drag-n-drop action")
+	public void checkMovingFileToFolder() {
+		ydStartPage.openPage().enterToLoginForm();
+		ydLoginPopup.login();
+/*		Assert.assertTrue(ydStartPage.isImageInFolder(),
+				"Successful Subscription Message should be visible");*/
 	}
+
+
 
 	@AfterTest
 	private void quitBrowser() {
