@@ -6,6 +6,8 @@ import ActionsAndSeleniumGrid.pages.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class YDStartPage extends AbstractPage {
 
@@ -24,6 +26,7 @@ public class YDStartPage extends AbstractPage {
 	}
 
 	public YDStartPage enterToLoginForm() {
+		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(enterButton));
 		enterButton.click();
 		return this;
 	}

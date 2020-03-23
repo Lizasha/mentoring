@@ -37,14 +37,11 @@ public class DriverManager {
 		options.setCapability("platformName", Platform.WINDOWS);
 
 		try {
-			 DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
-
-		driver = new ChromeDriver();
+		// add 2 nodes
 		driver.manage().window().maximize();
 	}
 

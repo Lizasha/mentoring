@@ -14,10 +14,10 @@ public class YDLoginPopup extends AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'button2_type_submit')]")
 	private WebElement submitButton;
 
-	@FindBy(xpath = "//*[contains(@class,'passp-form-field__label')]")
+	@FindBy(xpath = "//input[@type='text']")
 	private WebElement loginField;
 
-	@FindBy(xpath = "//*[contains(@class,'passp-form-field__label')]")
+	@FindBy(xpath = "//input[@type='password']")
 	private WebElement passwordField;
 
 	@FindBy(xpath = "//*[contains(@class,'header_has-notes-link')]")
@@ -35,12 +35,11 @@ public class YDLoginPopup extends AbstractPage {
 		Actions action = new Actions(driver);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(submitButton));
-		submitButton.click();
+		loginField.click();
 		action.click(loginField).sendKeys(userLogin).click(submitButton).build().perform();
+		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(passwordField));
 		passwordField.click();
-		//this executor need to input password because click() method doesn't work
-		jse.executeScript("document.getElementById('passp-field-passwd').value='password1';");
-		//action.click(passwordField).sendKeys(userPassword).click(submitButton).build().perform();
+		action.click(passwordField).sendKeys(userPassword).click(submitButton).build().perform();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(pageHeader));
 		return this;
 	}
