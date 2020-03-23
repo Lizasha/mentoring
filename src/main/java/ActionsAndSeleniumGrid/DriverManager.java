@@ -4,6 +4,7 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -31,13 +32,18 @@ public class DriverManager {
 
 	private static void initializationDriver() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Liza\\learn\\mentoring\\chromedriver.exe");
-/*		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		capabilities.setPlatform(Platform.WINDOWS);
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("start-maximized");
+		options.setCapability("platformName", Platform.WINDOWS);
+
 		try {
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"));
+			 DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
-		}*/
+		}
+
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}

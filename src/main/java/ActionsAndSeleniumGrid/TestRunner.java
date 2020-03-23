@@ -3,6 +3,7 @@ package ActionsAndSeleniumGrid;
 import ActionsAndSeleniumGrid.YandexDiskAutomation.YDStartPage;
 import ActionsAndSeleniumGrid.YandexDiskAutomation.YDLoginPopup;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -11,6 +12,9 @@ import ActionsAndSeleniumGrid.pages.LoginAndRegistrationPage;
 import ActionsAndSeleniumGrid.pages.MyAccountPage;
 import ActionsAndSeleniumGrid.pages.NewArrivalsPage;
 import ActionsAndSeleniumGrid.pages.ProductPage;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class TestRunner {
 	private HomePage homePage = new HomePage(DriverManager.getInstance().getDriver());
@@ -28,9 +32,8 @@ public class TestRunner {
 	private String invalidPassword = "incorrect_password";
 
 
-	@Parameters({"browserName", "browserVersion"})
 	@BeforeClass
-	public void initBrowser(@Optional String browserName, String browserVersion) {
+	public void initBrowser() {
 		DriverManager.getInstance();
 	}
 
