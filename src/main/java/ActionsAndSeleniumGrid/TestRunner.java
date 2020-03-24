@@ -1,5 +1,6 @@
 package ActionsAndSeleniumGrid;
 
+import ActionsAndSeleniumGrid.YandexDiskAutomation.HomeDirectoryPage;
 import ActionsAndSeleniumGrid.YandexDiskAutomation.YDStartPage;
 import ActionsAndSeleniumGrid.YandexDiskAutomation.YDLoginPopup;
 import org.openqa.selenium.interactions.Actions;
@@ -12,6 +13,7 @@ import ActionsAndSeleniumGrid.pages.LoginAndRegistrationPage;
 import ActionsAndSeleniumGrid.pages.MyAccountPage;
 import ActionsAndSeleniumGrid.pages.NewArrivalsPage;
 import ActionsAndSeleniumGrid.pages.ProductPage;
+import org.testng.asserts.SoftAssert;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -24,6 +26,7 @@ public class TestRunner {
 	private MyAccountPage myAccountPage = new MyAccountPage(DriverManager.getInstance().getDriver());
 	private YDStartPage ydStartPage = new YDStartPage(DriverManager.getInstance().getDriver());
 	private YDLoginPopup ydLoginPopup = new YDLoginPopup(DriverManager.getInstance().getDriver());
+	private HomeDirectoryPage homeDirectoryPage = new HomeDirectoryPage(DriverManager.getInstance().getDriver());
 
 
 	private String validLogin = "colorpopuser@mailinator.com";
@@ -68,10 +71,21 @@ public class TestRunner {
 	// Module Actions and SeleniumGrid
 	@Test(description = "take a file and move it in a folder by drag-n-drop action")
 	public void checkMovingFileToFolder() {
+		SoftAssert softAssert = new SoftAssert();
+
+		//prepare test
 		ydStartPage.openPage().enterToLoginForm();
 		ydLoginPopup.login();
-/*		Assert.assertTrue(ydStartPage.isImageInFolder(),
-				"Successful Subscription Message should be visible");*/
+
+		//check that precondition is true
+		homeDirectoryPage.goToDirectory();
+		softAssert.assertTrue(homeDirectoryPage.isFolderEmpty(), "Folder should be empty");
+
+		//perform checking
+		//homeDirectoryPage.closeDownloadPopup();
+		homeDirectoryPage.dragNDropFileToFolder().goToDirectory();
+		Assert.assertTrue(homeDirectoryPage.isImageInFolder(),
+				"Successful Subscription Message should be visible");
 	}
 
 

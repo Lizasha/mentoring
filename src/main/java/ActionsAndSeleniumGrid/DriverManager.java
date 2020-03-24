@@ -1,5 +1,6 @@
 package ActionsAndSeleniumGrid;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -31,8 +32,8 @@ public class DriverManager {
 	}
 
 	private static void initializationDriver() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Liza\\learn\\mentoring\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
+		WebDriverManager.chromedriver().version("80.0.3987.106").setup();
 		options.addArguments("start-maximized");
 		options.setCapability("platformName", Platform.WINDOWS);
 

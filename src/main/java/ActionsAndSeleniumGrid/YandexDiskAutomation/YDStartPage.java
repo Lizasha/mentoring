@@ -30,9 +30,4 @@ public class YDStartPage extends AbstractPage {
 		enterButton.click();
 		return this;
 	}
-
-	public boolean isImageInFolder() {
-		// implementation will be done here
-		return false;
-	}
 }
