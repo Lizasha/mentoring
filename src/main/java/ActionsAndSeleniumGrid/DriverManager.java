@@ -43,7 +43,6 @@ public class DriverManager {
 			e.printStackTrace();
 		}
 		// add 2 nodes
-		driver.manage().window().maximize();
 	}
 
 	public void closeDriver() {

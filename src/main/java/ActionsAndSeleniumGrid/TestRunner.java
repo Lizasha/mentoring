@@ -77,18 +77,16 @@ public class TestRunner {
 		ydStartPage.openPage().enterToLoginForm();
 		ydLoginPopup.login();
 
-		//check that precondition is true
+		//check that preconditions are ready
 		homeDirectoryPage.goToDirectory();
 		softAssert.assertTrue(homeDirectoryPage.isFolderEmpty(), "Folder should be empty");
+		DriverManager.getInstance().getDriver().navigate().back();
 
 		//perform checking
-		//homeDirectoryPage.closeDownloadPopup();
 		homeDirectoryPage.dragNDropFileToFolder().goToDirectory();
 		Assert.assertTrue(homeDirectoryPage.isImageInFolder(),
-				"Successful Subscription Message should be visible");
+				"File in directory should be visible");
 	}
-
-
 
 	@AfterTest
 	private void quitBrowser() {

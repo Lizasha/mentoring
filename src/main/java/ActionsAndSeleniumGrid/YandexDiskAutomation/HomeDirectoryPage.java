@@ -54,6 +54,7 @@ public class HomeDirectoryPage extends AbstractPage {
 
 
 	public boolean isImageInFolder() {
+		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(pageHeader));
 		int countOfFiles = files.size();
 		return countOfFiles > 0;
 	}
