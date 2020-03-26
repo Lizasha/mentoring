@@ -1,4 +1,4 @@
-package ActionsAndSeleniumGrid.pages;
+package ActionsAndSeleniumGrid.CPPages;
 
 import java.util.List;
 

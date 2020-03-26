@@ -1,4 +1,4 @@
-package ActionsAndSeleniumGrid.pages;
+package ActionsAndSeleniumGrid.CPPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

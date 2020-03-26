@@ -1,6 +1,7 @@
-package ActionsAndSeleniumGrid.YandexDiskAutomation;
+package ActionsAndSeleniumGrid.YandexDiskPages;
 
-import ActionsAndSeleniumGrid.pages.AbstractPage;
+import ActionsAndSeleniumGrid.CPPages.AbstractPage;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -57,5 +58,10 @@ public class HomeDirectoryPage extends AbstractPage {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(pageHeader));
 		int countOfFiles = files.size();
 		return countOfFiles > 0;
+	}
+
+	public void clickOnImage() {
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", files.get(1));
 	}
 }
