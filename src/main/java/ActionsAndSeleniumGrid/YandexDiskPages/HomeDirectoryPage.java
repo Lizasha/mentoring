@@ -63,5 +63,6 @@ public class HomeDirectoryPage extends AbstractPage {
 	public void clickOnImage() {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", files.get(1));
+		executor.executeScript("alert('Welcome to Yandex Disk');");
 	}
 }

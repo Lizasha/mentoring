@@ -55,6 +55,11 @@ public class CPTests {
 
 	}
 
+	@Test
+	public void checkJS() {
+		homePage.openPage().executeSomeJS();
+	}
+
 	@AfterClass
 	private void quitBrowser() {
 		DriverManager.getInstance().closeDriver();

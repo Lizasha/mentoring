@@ -1,5 +1,6 @@
 package ActionsAndSeleniumGrid.CPPages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import ActionsAndSeleniumGrid.DriverManager;
@@ -16,5 +17,10 @@ public class HomePage extends AbstractPage {
 	public HomePage openPage() {
 		DriverManager.getInstance().getDriver().get(environment.getUrl());
 		return this;
+	}
+
+	public void executeSomeJS() {
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("alert('Welcome to Color pop site!');");
 	}
 }
