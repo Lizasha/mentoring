@@ -1,6 +1,6 @@
 package ActionsAndSeleniumGrid.CPPages;
 
-import org.openqa.selenium.WebDriver;
+import ActionsAndSeleniumGrid.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class AbstractPage {
-	protected WebDriver driver;
+	protected DriverManager driverManager;
 
 	// Elements //
 
@@ -43,12 +43,10 @@ public abstract class AbstractPage {
 	private WebElement accountOptionsList;
 
 
-	public AbstractPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(this.driver,this);
+	public AbstractPage(DriverManager driverManager) {
+		this.driverManager = driverManager;
+		PageFactory.initElements(this.driverManager.getDriver(),this);
 	}
-
-
 
 	public AbstractPage clickOnBurgerMenu() {
 		burgerMenu.click();
@@ -60,7 +58,7 @@ public abstract class AbstractPage {
 	}
 
 	public boolean isProductInBag() {
-		boolean waitingBagDissapearence = new WebDriverWait(driver, 5).until(ExpectedConditions.invisibilityOf(bagView));
+		boolean waitingBagDissapearence = new WebDriverWait(driverManager.getDriver(), 5).until(ExpectedConditions.invisibilityOf(bagView));
 
 		if (waitingBagDissapearence) {
 			bagHeaderButton.click();
@@ -70,10 +68,10 @@ public abstract class AbstractPage {
 	}
 
 	public void openLoginForm() {
-		Actions action = new Actions(driver);
+		Actions action = new Actions(driverManager.getDriver());
 		action.moveToElement(accountIcon).build().perform();
-		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(accountOptionsList));
+		new WebDriverWait(driverManager.getDriver(), 5).until(ExpectedConditions.visibilityOf(accountOptionsList));
 		myAccount.click();
-		new WebDriverWait(driver,5).until(ExpectedConditions.visibilityOf(loginField));
+		new WebDriverWait(driverManager.getDriver(),5).until(ExpectedConditions.visibilityOf(loginField));
 	}
 }

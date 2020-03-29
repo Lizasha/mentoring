@@ -6,18 +6,25 @@ import ActionsAndSeleniumGrid.YandexDiskPages.StartPage;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.net.MalformedURLException;
+
 public class YDTests {
+	public DriverManager driverManager;
+	private StartPage startPage;
+	private LoginPopup loginPopup;
+	private HomeDirectoryPage HomeDirectoryPage;
 
-	private StartPage startPage = new StartPage(DriverManager.getInstance().getDriver());
-	private LoginPopup loginPopup = new LoginPopup(DriverManager.getInstance().getDriver());
-	private HomeDirectoryPage HomeDirectoryPage = new HomeDirectoryPage(DriverManager.getInstance().getDriver());
-
-	@BeforeClass
-	public void initBrowser() {
-		DriverManager.getInstance();
+	@BeforeClass(alwaysRun = true)
+	@Parameters({"os", "browser", "url", "node"})
+	public void initBrowser(String os, String browser, String url, String node) throws MalformedURLException {
+		driverManager = new DriverManager(os, browser, url, node);
+		startPage = new StartPage(driverManager);
+		loginPopup = new LoginPopup(driverManager);
+		HomeDirectoryPage = new HomeDirectoryPage(driverManager);
 	}
 
 	// Module Actions and SeleniumGrid
@@ -32,7 +39,7 @@ public class YDTests {
 		//check that preconditions are ready
 		HomeDirectoryPage.goToDirectory();
 		softAssert.assertTrue(HomeDirectoryPage.isFolderEmpty(), "Folder should be empty");
-		DriverManager.getInstance().getDriver().navigate().back();
+		driverManager.getDriver().navigate().back();
 
 		//perform checking
 		HomeDirectoryPage.dragNDropFileToFolder().goToDirectory();
@@ -47,8 +54,8 @@ public class YDTests {
 		HomeDirectoryPage.clickOnImage();
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	private void quitBrowser() {
-		DriverManager.getInstance().closeDriver();
+		driverManager.closeDriver();
 	}
 }

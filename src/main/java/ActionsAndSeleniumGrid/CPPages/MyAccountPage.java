@@ -1,5 +1,6 @@
 package ActionsAndSeleniumGrid.CPPages;
 
+import ActionsAndSeleniumGrid.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,12 +25,12 @@ public class MyAccountPage extends AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'page__context')]")
 	private WebElement subscriptionConfirmationImage;
 
-	public MyAccountPage(WebDriver driver) {
-		super(driver);
+	public MyAccountPage(DriverManager driverManager) {
+		super(driverManager);
 	}
 
 	public boolean isSuccessfulSignInMessageIsDisplayed() {
-		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(successfulSignInMessage));
+		new WebDriverWait(driverManager.getDriver(), 5).until(ExpectedConditions.visibilityOf(successfulSignInMessage));
 		return successfulSignInMessage.isDisplayed();
 	}
 }

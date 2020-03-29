@@ -1,6 +1,7 @@
 package ActionsAndSeleniumGrid.YandexDiskPages;
 
 import ActionsAndSeleniumGrid.CPPages.AbstractPage;
+import ActionsAndSeleniumGrid.DriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,20 +28,20 @@ public class LoginPopup extends AbstractPage {
 	private String userPassword = "password1";
 
 
-	public LoginPopup(WebDriver driver) {
-		super(driver);
+	public LoginPopup(DriverManager driverManager) {
+		super(driverManager);
 	}
 
 	public LoginPopup login() {
-		Actions action = new Actions(driver);
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(submitButton));
+		Actions action = new Actions(driverManager.getDriver());
+		JavascriptExecutor jse = (JavascriptExecutor) driverManager;
+		new WebDriverWait(driverManager.getDriver(), 5).until(ExpectedConditions.visibilityOf(submitButton));
 		loginField.click();
 		action.click(loginField).sendKeys(userLogin).click(submitButton).build().perform();
-		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(passwordField));
+		new WebDriverWait(driverManager.getDriver(), 5).until(ExpectedConditions.visibilityOf(passwordField));
 		passwordField.click();
 		action.click(passwordField).sendKeys(userPassword).click(submitButton).build().perform();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(pageHeader));
+		new WebDriverWait(driverManager.getDriver(), 20).until(ExpectedConditions.visibilityOf(pageHeader));
 		return this;
 	}
 }

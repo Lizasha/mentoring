@@ -1,5 +1,6 @@
 package ActionsAndSeleniumGrid.CPPages;
 
+import ActionsAndSeleniumGrid.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,8 +19,8 @@ public class LoginAndRegistrationPage extends AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'errors')]")
 	private WebElement errorLoginMessage;
 
-	public LoginAndRegistrationPage(WebDriver driver) {
-		super(driver);
+	public LoginAndRegistrationPage(DriverManager driverManager) {
+		super(driverManager);
 	}
 
 	public LoginAndRegistrationPage inputLogin(String login) {

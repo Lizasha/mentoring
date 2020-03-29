@@ -1,8 +1,8 @@
 package ActionsAndSeleniumGrid.YandexDiskPages;
 
 import ActionsAndSeleniumGrid.CPPages.AbstractPage;
+import ActionsAndSeleniumGrid.DriverManager;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -25,10 +25,10 @@ public class HomeDirectoryPage extends AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'listing-item_type_dir')]")
 	private List<WebElement> dirs;
 
-	Actions action = new Actions(driver);
+	Actions action = new Actions(driverManager.getDriver());
 
-	public HomeDirectoryPage(WebDriver driver) {
-		super(driver);
+	public HomeDirectoryPage(DriverManager driverManager) {
+		super(driverManager);
 	}
 
 	public HomeDirectoryPage closeDownloadPopup() {
@@ -55,13 +55,13 @@ public class HomeDirectoryPage extends AbstractPage {
 
 
 	public boolean isImageInFolder() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(pageHeader));
+		new WebDriverWait(driverManager.getDriver(), 20).until(ExpectedConditions.visibilityOf(pageHeader));
 		int countOfFiles = files.size();
 		return countOfFiles > 0;
 	}
 
 	public void clickOnImage() {
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		JavascriptExecutor executor = (JavascriptExecutor) driverManager.getDriver();
 		executor.executeScript("arguments[0].click();", files.get(1));
 		executor.executeScript("alert('Welcome to Yandex Disk');");
 	}

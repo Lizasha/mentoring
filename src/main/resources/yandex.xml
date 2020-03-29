@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Yandex Disk" parallel="tests" thread-count="3">
+    <parameter name="url" value="https://disk.yandex.ru"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="node" value="http://localhost:4444"/>
+
+    <test name="Tests on Firefox" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="ActionsAndSeleniumGrid.YDTests"/>
+        </classes>
+    </test>
+
+    <test name="Tests on IE11" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="ie11"/>
+        <classes>
+            <class name="ActionsAndSeleniumGrid.YDTests"/>
+        </classes>
+    </test>
+
+    <test name="Tests on Chrome" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ActionsAndSeleniumGrid.YDTests"/>
+        </classes>
+    </test>
+
+</suite>
