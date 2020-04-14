@@ -24,8 +24,8 @@ public class LoginPopup extends AbstractPage {
 	@FindBy(xpath = "//*[contains(@class,'header_has-notes-link')]")
 	private WebElement pageHeader;
 
-	private String userLogin = "testyyand";
-	private String userPassword = "password1";
+	private String userLogin = "*";
+	private String userPassword = "*";
 
 
 	public LoginPopup(DriverManager driverManager) {
